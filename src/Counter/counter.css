@@ -1,0 +1,29 @@
+.counter-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 2rem auto;
+    gap: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.inc,
+.dec {
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    cursor: pointer;
+    outline: none
+}
+
+.inc {
+    background-color: #137333;
+}
+
+.count {
+    font-size: 25px;
+    width: 5%;
+}
