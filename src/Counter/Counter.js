@@ -1,24 +1,24 @@
 import React, { Component } from "react";
 import "./counter.css";
 class Counter extends Component {
-  state = {
-    count: 0,
-  };
-
   render() {
     return (
       <div className="counter-cont">
-        <div className="count">{this.state.count || this.props.counter}</div>
-        <div>
-          <button className="dec" onClick={this.props.onDecrement}>
-            -
-          </button>
-        </div>
-        <div>
-          <button className="inc" onClick={() => this.props.onIncrement()}>
-            +
-          </button>
-        </div>
+        <div className="count">{this.props.count}</div>
+        <button
+          onClick={() => this.props.onDecrement(this.props.id)}
+          className="dec"
+        >
+          -
+        </button>
+        <button
+          onClick={() =>
+            this.props.onIncrement(this.props.id, this.props.steps)
+          }
+          className="inc"
+        >
+          +
+        </button>
       </div>
     );
   }
