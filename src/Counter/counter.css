@@ -29,3 +29,25 @@
 .count {
     font-size: 25px;
 }
+
+.total {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.total {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    font-size: 22px;
+    width: fit-content;
+    border: 2px solid #137333;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+}
+
+.total-p {
+    color: #f44336;
+}
